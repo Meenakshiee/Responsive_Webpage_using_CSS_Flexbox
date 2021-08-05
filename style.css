@@ -1,0 +1,1333 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    padding:0 ;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Roboto Mono;
+
+}
+
+/* ########## UTILITY CLASSES ################# */
+.container{
+    max-width: 1200px;
+    width:90%;
+    margin: auto;
+}
+.container1{
+    max-width: 1100px;
+    width:90%;
+    margin: auto;
+   
+}
+.arrow{
+    font-weight:300 ;
+}
+.button {
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 10px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    margin:10px;
+}
+
+.small-btn {
+    width: 50px;
+    height: 25px;
+}
+
+.medium-btn {
+    width: 70px;
+    height: 30px;
+}
+.large-btn{
+    padding:10px 10px; 
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin-top: 20px;
+
+}
+.span-inline-button{
+    display: inline;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor:pointer;
+    outline: none;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: white;
+}
+.btn.btn-primary{
+    
+    background-color:rgb(255, 255, 255,0.3);
+    /* bacgrpound-opacity:0.3 ; */
+    color: white;
+    margin: 10px;
+    display: inline-block;
+    padding: 0.5em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor:pointer;
+    outline: none;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: white;
+
+}
+.btn-primary:hover{
+    color: black;
+}
+
+.btn .purple {
+    background: #62089e;
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor:pointer;
+    outline: none;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+.btn .purple-gradient {
+    background: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor:pointer;
+    outline: none;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+.btn .sky-blue{
+    background: linear-gradient( 109.6deg,  rgba(209,0,116,1) 11.2%, rgba(110,44,107,1) 91.1% );
+    display: inline-block;
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 1px;
+    cursor:pointer;
+    outline: none;
+    margin-top: 1rem;
+    text-transform: uppercase;
+
+}
+.sm-heading{
+    font-size: 1.8rem; 
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+.md-heading{
+    font-size: 2.2rem;}
+
+.bg-white{
+    background: white;
+
+}
+.text-white{
+    color: white;
+}
+.text-black{
+    color:black;
+}
+.text-grayl{
+    color:rgb(155, 155, 155);
+}
+.text-sblue{
+    color:#2fb3b3 ;
+}
+.sf-font{
+    font-weight:10;
+}
+.hrico-items img{
+    display: inline-block;
+    height: 30px;
+    height: 30px;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
+    
+    
+
+}
+.ico{
+    display: inline-block;
+    height: 30px;
+    height: 30px;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+/* ################################### NAV BAR STYLING########################## */
+
+
+/* for dekstop mode */
+
+.navbar input[type="checkbox"],
+.navbar .humburger-lines{
+    display: none; 
+    text-decoration: none;
+   
+}
+/* .humburger-menu input[type="checkbox"]{
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.humburger-menu{
+    border:red solid 1px;
+    position: relative;
+} */
+a{
+    font-size: 1.6rem; 
+    text-decoration: none;}
+
+.navbar{
+    /* box-shadow: 0px 5px 10px 0px #aaa; */
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+    /* background:linear-gradient( 109.6deg,  rgba(238,58,136,1) 11.2%, rgba(128,162,245,1) 91.1% ); */
+    color: black;
+    opacity: 0.85;
+    z-index: 999;
+    /* padding-top: 20px; */
+/* 
+    when we do position fixed it get out of flow... so inorder to make it in flow we use width 100% */
+}
+ .navbar-container{
+     display: flex;
+     justify-content: space-between;
+     height:64px ;
+     align-items: center;
+ }
+ .menu-items{
+     order: 2;
+     display: flex;
+ }
+ .menu-items li{
+     list-style: none;
+     font-size: 3.5rem; 
+     margin-left: 1.5rem;
+ }
+ .logo{
+     order: 1;
+     font-size: 3rem;
+     color: white;
+ }
+ .navbar a{
+     color:white;
+     text-decoration: none;
+     font-weight: 500;
+ }
+.navbar a:hover{
+    color: black;
+}
+
+/* ############## SHKEW 1 AREA STYLE ############## */
+.showcase-area{
+    height: 90vh;
+    background-image: linear-gradient( 109.6deg,  rgba(61,245,167,1) 11.2%, rgba(9,111,224,1) 91.1% );
+    /* background:linear-gradient( 109.6deg,  rgba(238,58,136,1) 11.2%, rgba(128,162,245,1) 91.1% ); */
+}
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    font-size: 2.2rem;
+    color: white;}
+.maintitle{
+    font-weight: 300;
+    padding:10px 10px ;
+}
+/* .job-details{
+    background-color: violet;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+} */
+ /* ###############  */
+ .skew{
+     margin-top: -150px;
+     padding: 110px 0;
+     transform: skew(0deg,-10deg);
+     background: white;
+ }
+ .content{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-content: flex-start;
+     transform: skew(0deg,10deg);
+     flex-wrap: wrap;
+
+     
+     
+ }
+ .p1{
+     font-size: 2rem;
+     color: rgb(177, 182, 187);
+ }
+ /* #################### */
+ .counts{
+    padding-top: 20px;
+    /* display: flex;
+    flex-direction: row;
+    align-items: flex-start; */
+    justify-content: space-between;
+    transform: skew(0deg,10deg);
+    
+}
+.count-items{
+    color: black;
+    font-size: 2rem;
+   
+    
+}
+/* ##################### JOB DETILS PROFILE######### */
+.job-details input{
+    height: 40px;
+    background:#B5EAEA;
+    font-size: 1.2rem;
+    padding: 12px;
+    outline: none;
+    border:#B5EAEA ;
+    
+    /* text:#2fb3b3 */
+  
+
+}
+.jd1{ 
+    padding-top:10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+.jbox{
+    /* display: inline-block; */
+    height: 50px;
+    width: 230px;
+    background:#B5EAEA;
+    /* font-size: 1.2rem; */
+    padding: 15px 10px;
+    outline: none;
+    border:#B5EAEA ;
+    font-size: 20px;
+    text-align: center;
+    /* width:0ch;
+    overflow: hidden;
+    white-space: nowrap; */
+    
+}
+
+
+::-webkit-input-placeholder{
+    color:#2fb3b3 ;   
+}
+
+
+label{
+    display: inline-block;
+    width: 100px;
+    margin: 8px;
+    font-size: 1.2rem;
+}
+.job-details{ 
+    /* border: 10px solid black; */
+    width: 390px;
+    height: 400px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    animation-name: job-details-box;
+    animation-duration: 4s;
+    margin: 20px 20px;
+    padding: 20px 20px;
+    box-shadow: 2px 2px 6px 0px black;
+    
+    
+     /* max-width: 250;
+    width: 90%;
+    margin: auto; */
+}
+@keyframes job-details-box{
+    0%   {left:0px; top:0px;}
+    25%  { left:200px; top:0px;}
+    50%  { left:200px; top:200px;}
+    75%  { left:0px; top:200px;}
+    100% { left:0px; top:0px;}
+    
+
+}
+.counts{
+    background-color: white;
+}
+.counting-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    text-align: center;
+
+}
+.counting-itemss img{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
+    /* margin: 30px; */
+    /* padding-top: 40px; */
+    
+    
+}
+
+
+
+/* ###########################HR SYTILING########### */
+.hr{
+    margin-top: 200px;
+    background:#B5EAEA ;
+    
+}
+.content-hr{
+    color:#2fb3b3 ;
+    margin: 100px 20px;
+    /* order: 1; */
+    
+
+}
+.hr-line{
+    /* order:0; */
+    display: inline-block;
+}
+/* .icons1{
+ width: 25%;
+
+} */
+
+/* -----------> candidate form----------- */
+.line-blue{
+    display: inline-block; 
+    width: 15px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: #2fb3b3 ;  
+    animation-name:line-bluegrow ;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    margin-left: 2px;
+    margin-right: 2px;
+    
+}
+@keyframes line-bluegrow{
+    from{
+        width: 0;
+    }
+    to{
+        width:100px;
+    }
+
+}
+.line-graym{
+    display: inline-block; 
+    width: 15px;
+    height: 8px;
+    background-color: #d1cdba;
+    /* background-color: gray; */
+    border-radius: 10px;
+    animation-name:line-graygrowme ;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    margin-left: 2px;
+    margin-right: 2px;
+  
+    
+}
+@keyframes line-graygrowme{
+    from{
+        width: 0;
+    }
+    to{
+        width:105px;
+    }
+
+}
+.line-grays{
+    display: inline-block; 
+    width: 85px;
+    height: 8px;
+    margin-left:6px ;
+    margin-right: 6px;
+    background-color: #d1cdba;
+    
+    border-radius: 10px;
+    
+    /* animation-name:line-graygrowme ;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards; */
+    
+}
+
+.line-grayl{
+    display: inline-block; 
+    width: 100px;
+    height: 8px;
+    background-color: #d1cdba;
+    border-radius: 10px;
+    animation-name:line-graygrowle ;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+    
+}
+@keyframes line-graygrowle{
+    from{
+        width:300;
+    }
+    to{
+        width:350px;
+    }
+
+}
+.line-grayml{
+    display: inline-block; 
+    width: 235px;
+    height: 8px;
+    background-color: #d1cdba;
+    
+    border-radius: 10px;
+    animation-name:line-graygrowmle ;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+}
+.jillian{
+    max-width: 350px;
+    width:90%;
+    padding: 10px 10px;
+        /* margin: auto; */
+
+}
+.candidate-form{
+    max-width: 520px;
+    width:90%;
+    padding: 10px 10px;
+    background-color: white;
+    height: 530px;
+
+        /* margin: auto; */
+        /* border:5px solid black; */
+        border-radius:20px;
+    margin: 50px 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 16px 0px black;
+    /* background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)); */
+}
+    
+
+    /* order: 0; */
+
+.line-1c,.line-2c,.line-3c {
+    padding-top: 6px;
+}
+
+
+.hr-conatiner{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+
+
+}
+
+
+/* #################################### TESTIMODIAL SYLING ###################### */
+.empolyee-directory{
+    background-color: rgb(243, 237, 237);
+    /* border:1px solid black; */
+    box-sizing: content-box;
+    height: 200px;
+    max-width: 230px;
+    border: 2px solid rgb(240, 234, 234);
+    border-radius: 10px;
+    order: 0;
+    display: inline-block;
+    width: 90%;
+     
+    
+}
+
+.employee{
+    background-color:white;
+    height: 305px;
+    width: 390px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px 0px black;
+    margin-top: 100px;
+
+}
+
+.em{
+    padding:10px;
+}
+
+.empy-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.employee-colume{
+    background-color: rgb(229, 231, 235);
+    display: flex;
+    justify-content: space-between;
+    /* font-size: 1.6rem; */
+    padding:1rem 1rem;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 5px 5px 16px 0px black;
+
+   
+    
+
+}
+.empll{
+    padding: 10px 10px;
+    font: 10px;
+
+}
+.empybox{
+    padding: 10px 10px;
+    height: 250px;
+    width: 140px;
+    box-shadow: 2px 2px 6px 0px black;
+
+}
+.employee1-photo img{
+    display: block;
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin: auto;
+    box-shadow: 5px 5px 16px 0px black;
+
+}
+
+.employee-directory-line{
+    padding: 25px 25px;
+
+
+}
+/* ####################### PAYROLL STAYLING ################ */
+.payrolls{
+    background-color: white;
+    
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+
+/* font-family: Flaticon;
+    font-size: 50px;
+font-style: normal;
+margin-left: 7px;
+} */
+
+.icondiscription{
+    text-align: center;
+    color:#2fb3b3 ;
+}
+.payrollicons{
+    display:flex;
+    flex-wrap: wrap;
+    
+    
+    padding: 50px 0px 30px 0px;
+}
+
+/* .praylloys-items{
+    display: flex;
+    flex: 1 1 600px;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+
+
+} */
+.praylloys-items img{
+    display: inline-block;
+    height: 150px;
+    height: 150px;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
+    margin: 30px;
+    
+    
+}
+/* .payrolls-content{
+    border: 1px solid black;
+
+
+} */
+.praylloys-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0
+   
+}
+/* .payrollicon1,
+.payrollicon2,
+.payrollicon3,
+.payrollicon4 {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0
+} */
+
+/* ################## BENEFIT STYLING ############# */
+
+.skew2{
+    background-color:#23049d;
+}
+
+.benefits-form{
+    border: 1px solid black;
+    border-radius: 10px;
+    
+    background-color: white;
+    color: black;
+    height: 450px;
+    width: 320px; 
+    margin-right:50px;
+}
+.blines{
+    padding-top: 20px;
+}
+
+.bline-grayl{
+    display: inline-block; 
+    width: 100px;
+    height: 8px;
+    background-color: #d1cdba;
+    border-radius: 10px;
+    animation-name:bline-graygrowle ;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+    
+}
+@keyframes bline-graygrowle{
+    from{
+        width:100;
+    }
+    to{
+        width:120px;
+    }
+
+}
+.bline-grayml{
+    display: inline-block; 
+    width: 235px;
+    height: 8px;
+    background-color: #d1cdba;
+    
+    border-radius: 10px;
+    animation-name:bline-graygrowmle ;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes bline-graygrowmle{
+    from{
+        width:150;
+    }
+    to{
+        width:100px;
+    }
+
+}
+.benefit-content1{
+   background-color:white;
+   /* padding: 0 15px; */
+   height: 420px;
+   width: 270px;
+   margin: 10px 20px;
+   box-sizing: border-box;
+   padding: 10px 10px;
+}
+
+.blue-cross{
+    margin:20px 20px;
+    padding:20px 20px;
+    width:280 ;
+    height: 370;
+    border:5px solid orangered;
+    box-sizing: border-box;
+}
+
+.bcline-grayml{
+    display: inline-block; 
+    width: 105px;
+    height: 8px;
+    background-color: #d1cdba;
+    
+    border-radius: 10px;
+
+    
+}
+.blines2{
+    padding-top: 20px;
+    padding-bottom:20px;
+}
+.brupee{
+    padding-top: 20px;
+}
+.bcline-grayl{
+    display: inline-block; 
+    width: 50px;
+    height: 8px;
+    background-color: #d1cdba;
+    
+    border-radius: 10px;
+
+    
+}
+/* ................. */
+.card{
+    height: 200px;
+    background-image: radial-gradient( circle 534px at 7.8% 17.6%,  rgba(254,253,112,1) 1.7%, rgba(248,143,111,1) 91.8% );
+    width:340px;
+    height: 180px;
+    padding:10px 10px;
+    box-sizing:border-box;
+    border-radius: 10px;
+    color: black;
+    margin: 20px 20px;
+}
+.text-card{
+    padding: 10px 0;
+}
+
+/* -------------------------- */
+.bsbox{
+    background-color:white;
+    height: 200px;
+    width: 116px;
+    color: black;
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+   padding: 10px 10px;
+   border-radius: 20px;
+   box-shadow: 2px 2px 6px 0px black;
+}
+.maxi-padding{
+    padding-top: 45px;
+}
+.bs-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+.benefit-summary{
+    
+    padding-top: 5px;
+    background-color:whitesmoke;
+    width:432px;
+    height:550 ;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin: 100px 10px;
+}
+.bsline-grayml{
+    display: inline-block; 
+    width: 90px;
+    height: 5px;
+    background-color: #d1cdba;
+/*     
+    border-radius: 10px;
+    animation-name:bline-graygrowmle ;
+    animation-duration: 5s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards; */
+    
+}
+.bsline-grayl{
+    display: inline-block; 
+    width: 50px;
+    height: 5px;
+    background-color: #d1cdba;
+    
+ 
+}
+.section-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+
+}
+.skew2{
+    margin-top: 40px;
+    padding: 110px 0;
+    transform: skew(0deg,-6deg);
+    background: darkblue;
+    border-top: 10px solid  black;
+    border-bottom: 10px solid  black;
+    
+}
+.skew2-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    transform: skew(0deg,6deg);
+    flex-wrap: wrap;
+
+}
+/* 
+ ##################### TIME SYTLING ##################### */
+.time{
+    padding: 75px 0;
+    background-color: white;
+}
+.time-content1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    text-align: center;
+
+}
+.time-content1 img{
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 10%;
+    object-fit: cover;
+    object-position: center;
+    margin: 30px;
+    
+    
+}
+/* --------- */
+.timeline{
+    /* padding-left: 130px; */
+    padding-top: 50px;
+    font-size: 3.5rem;
+}
+.tcline2{
+    font-weight: 800;
+    padding-top:50px ;
+    color: gray;
+}
+.time-content2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    /* text-align: center; */
+
+}
+
+/* ################### STYLING WHY US ############################# */
+
+.whyus{
+    background:#B5EAEA;
+    padding:40px 0;
+    
+}
+.wline{
+padding: 20px ;
+}
+
+.whywrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    text-align: center;
+
+}
+/* .wc{
+    color: rgb(63, 58, 58);
+}
+.wp{
+    color: black;
+} */
+
+.wpo{
+    box-sizing: border-box;
+    background-color: white;
+    width: 200px;
+    height: 800;
+    padding: 20px 20px;
+    font-size: 2rem;
+    color: rgb(63, 58, 58);
+    box-shadow: 2px 2px 6px 0px black;
+
+    
+}
+/* ------ */
+.wp2,.wp4{
+    padding-top: 40px;
+}
+
+/* ################# STYLING ADVISOR ################# */
+
+.advisor{
+    background-color: white;
+    padding:45px 0;
+}
+.advisor-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    text-align: center;
+
+
+}
+.al{
+    padding: 40px 10px;
+    text-align: start;
+}
+.advisor-button{
+    padding-top: 100px;
+}
+
+
+.last{
+     background: darkblue;;
+}
+.last-content img{
+    display: inline-block;
+    height: 700px;
+    height: 450px;
+    /* border-radius: 10%; */
+    object-fit: cover;
+    object-position: center;
+    margin: 30px;}
+    
+    
+.lll img{
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: 30px;
+    
+    
+}
+.l1{
+    margin: 25px 10px;
+    padding: 10px 10px;
+    width: 587px;
+    height: 200px;
+    background-color:#E9B0DF;
+    border-radius: 10px;
+}
+
+.last-content{display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    text-align: center;}
+
+
+/* ############# STARTED SYLING###### */
+.startingl{
+    background-color: white;
+    padding:45px 0;
+}
+.startingl-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    text-align: center;
+    margin: 20px 10px;
+    /* padding-top:20px 10px ; */
+    
+
+
+}
+/* .pad{
+    margin-left: 150px;
+} */
+.sl{
+    padding: 50px 400px;
+    text-align: start;
+}
+
+.footer{
+    margin-top: 20px;
+
+
+    background-color: white;
+
+}  
+.footer-wrap{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    text-align: center;
+
+}
+.wrapperss .buttonss{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color:#FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgb(0,0,0,0.1);
+   
+    
+}
+.wrapperss .buttonss .footericon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    text-align: center;
+
+
+}
+.wrapperss .buttonss .footericon i{
+    font-size: 25px;
+    line-height: 60px;
+
+}
+
+.fab{
+    padding:10px 10px;
+}
+
+.wrapperss .buttonss span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 600px;
+    margin-left: 10px;
+    
+
+}
+/* ########################## FOOTER SECTION ##################### */
+.footer{
+    background-color: #263228;
+    padding: 2rem;
+    text-align: center;
+  
+    
+
+}
+.social-media-links{
+    margin: 2rem 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ###################### MEDIA QUEIRES #########################
+ */
+@media(max-width:768px){
+    .navbar{
+        opacity: 0.95;
+
+
+    }
+    .navbar-container input[type="checkbox"],
+    .navbar-container .humburger-lines{
+        display: block;
+    }
+    .navbar-container{
+        display: block;
+        position: relative;
+        height: 64px;
+    }
+    .navbar-container input[type="checkbox"]{
+        position: absolute;
+        display: block;
+        height: 32px;
+        width:40px;
+        top:20px;
+        left:20px;
+        z-index:5;
+        opacity: 0;
+    }
+    .navbar-container .humburger-lines{
+        display: block;
+        height: 32px;
+        width:40px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+.navbar-container .humburger-lines .line{
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-container .humburger-lines .line1{
+    transform-origin:0% ;
+    transition: transform 0.4s ease-in-out;
+}
+.navbar-container .humburger-lines .line2{
+    /* transform-origin:0% ; */
+    transition: transform 0.4s ease-in-out;
+}
+.navbar-container .humburger-lines .line3{
+    transform-origin: 0 100% ;
+    transition: transform 0.4s ease-in-out;
+}
+.navbar .menu-items{
+    padding-top: 100px;
+    background-color:#2fb3b3 ;;
+    height: 100vh;
+    max-width: 300px;
+    transform: translateX(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 5px 0px 10px 0 #aaa;
+
+}
+
+.navbar .menu-items li{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.logo{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 3rem;
+}
+.sign-in{
+    position: absolute;
+    top:10px;
+    right:30px;
+    font-size: 1.6rem;
+}
+
+.navbar-container input[type="checkbox"]:checked ~ .menu-items{
+    transform: translateX(0);
+
+}
+.navbar-container input[type="checkbox"]:checked ~ .humburger-lines .line1{
+    transform: rotate(45deg);
+
+}
+.navbar-container input[type="checkbox"]:checked ~ .humburger-lines .line2{
+    transform: scaleX(0);
+
+}
+.navbar-container input[type="checkbox"]:checked ~ .humburger-lines .line3{
+    transform: rotate(-45deg);
+
+}
+}
+
+
+
+/* ----------------------
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: #3d9970;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    padding: 5px;
+    animation: shimmy 3s infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes shimmy {
+    0% {
+      transform: translate(0, 0);    
+    }
+    100% {
+      transform: translate(20px, 50px);
+    } */
+    .footericons{
+        padding: 10px 10px;
+        text-align: center;
+    }
+    .contact{color: red;
+        padding: 10px 10px;
+
+    }
